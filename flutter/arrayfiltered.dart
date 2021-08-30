@@ -19,8 +19,8 @@ void main() {
   
   filtered = data;
      filtered = data
-          .where((idx) =>
-              idx.nama.toLowerCase().contains(cari.toLowerCase()))
+          .where((item) =>
+              item.nama.toLowerCase().contains(cari.toLowerCase()))
           .toList();
     
   for (var item in filtered) {
@@ -28,5 +28,6 @@ void main() {
   }
   
   print("");
-  filtered.forEach((e) => print(e.nama));  
+  filtered.forEach((item) => print(item.nama));    
+  
 }
